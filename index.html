@@ -1050,7 +1050,14 @@
 						</div>
 					</div>
 					<!-- Footer -->
-					<footer class="footer">© 2025 @prabhnosingh</footer>
+					<!-- <footer class="footer">© 2025 @prabhnosingh</footer> -->
+					 <footer class="footer">© <span class="js-year"></span> @prabhnosingh</footer>
+
+					<script>
+					document.querySelectorAll(".js-year").forEach(el => {
+						el.textContent = new Date().getFullYear();
+					});
+					</script>
 				</div>
 			</div>
 		</div>
